@@ -12,9 +12,9 @@
  *  Display 20x4:                Setup:
  *  +--------------------+      +----------------+
  *  |HH:MM     DD/MM/YYYY|      |    >HH :>MM    |
- *  |Temp.camera:23.00*C |      |>DD />MM />YYYY |
- *  |Temp.afara:-10.25*C |      +----------------+
- *  |Tur centrala:23.51*C|   
+ *  |Temp.camera:  23.0*C|      |>DD />MM />YYYY |
+ *  |Temp.afara: -10.5*C |      +----------------+
+ *  |Tur centrala: 43.5*C|   
  *  +--------------------+         
  */
 
@@ -264,7 +264,7 @@ void lcdPrint(){
 //  lcd.print("In:");
   lcd.print("Temp.camera:");
 //  lcd.print(temp1);
-lcd.setCursor(12, 1);
+lcd.setCursor(13, 1);
  if (temp1 < 0) 
  {t1=-temp1;}
  else t1=temp1;  
@@ -281,7 +281,7 @@ lcd.setCursor(12, 1);
   lcd.setCursor(0,2); //10 cell of second row
   lcd.print("Temp.afara:");
 //  lcd.print(temp3);
-lcd.setCursor(12, 2);
+lcd.setCursor(13, 2);
  if (temp3 < 0) 
  {t3=-temp3;}
  else t3=temp3;  
@@ -298,7 +298,7 @@ lcd.setCursor(12, 2);
   lcd.setCursor(0,3); //10 cell of second row
   lcd.print("Tur centrala:");
 //  lcd.print(temp2);
-lcd.setCursor(12, 3);
+lcd.setCursor(13, 3);
  if (temp2 < 0) 
  {t2=-temp2;}
  else t2=temp2;  
